@@ -1,6 +1,6 @@
 import React from "react";
 import { usePais } from "../../hooks/usePais";
-
+import { Multiselect } from 'multiselect-react-dropdown';
 
 
 
@@ -21,11 +21,7 @@ export default function Dropdown() {
           </select>
         </div>
         <div className="municipio">
-        <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
+        <Multiselect options={pais} displayValue={pais.code}/>
         </div>
   
       </div>
